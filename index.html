@@ -4,24 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>3D Site</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
-    /> -->
-    <title>3D Site</title>
+    />
+    <!-- --------jQuery script -->
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="jquery.tiltedpage-scroll.js"></script>
+    <link rel="stylesheet" href="tiltedpage-scroll.css">
   </head>
-  <body>
+  <body> 
+      <div class="main">  
     <section class="header">
       <div class="content-box">
         <div class="menu">
           <img src="image/final logo.png" width="110" height="110" alt="" />
-          <button type="submit" id="button1"><a href="">Login</a></button>
-          <button type="submit" id="button2"><a href="">Sign Up</a></button>
+          <div class="nav">
+            <button type="submit" class="nav-but1" id="button1">
+              <a href="">Login</a>
+            </button>
+            <button type="submit" class="nav-but2" id="button2">
+              <a href="">Sign Up</a>
+            </button>
+          </div>
         </div>
         <!-- Banner Session----------- -->
         <div class="banner-text">
@@ -35,84 +47,239 @@
         </div>
       </div>
     </section>
+    </div>
     <!--------- Services------------------ -->
 
     <section class="big-wrapper">
       <h1>Our services</h1>
       <div class="content-box2">
-        <div class="box">
-          <div id="wrapper">
+        <div id="wrapper">
+          <div class="box">
             <h2>01</h2>
             <h3>UI/UX Design</h3>
             <p>
               We offer you greate and amazing design that creates a lasting
               memory forever. Please do count on us for your beautiful, greate
               and yet simple graphics from our team 24/7 from Monday to
-              Saturday, 8am to 4pm GMT Please do count on us for your beautiful,
-              greate and yet simple graphics from our team 24/7 from Monday to
-              Saturday, 8am to 4pm GMT
+              Saturday, 8am to 4pm GMT Please ..
             </p>
             <a href="#">Read More..</a>
           </div>
         </div>
-        <div class="box">
-          <div id="wrapper">
+
+        <div id="wrapper">
+          <div class="box">
             <h2>02</h2>
             <h3>UI/UX Design</h3>
             <p>
               We offer you greate and amazing design that creates a lasting
               memory forever. Please do count on us for your beautiful, greate
               and yet simple graphics from our team 24/7 from Monday to
-              Saturday, 8am to 4pm GMT Please do count on us for your beautiful,
-              greate and yet simple graphics from our team 24/7 from Monday to
-              Saturday, 8am to 4pm GMT
+              Saturday, 8am to 4pm GMT Please do count on us for ..
             </p>
             <a href="#">Read More..</a>
           </div>
         </div>
-        <div class="box">
-          <div id="wrapper">
+
+        <div id="wrapper">
+          <div class="box">
             <h2>03</h2>
             <h3>UI/UX Design</h3>
             <p>
               We offer you greate and amazing design that creates a lasting
               memory forever. Please do count on us for your beautiful, greate
               and yet simple graphics from our team 24/7 from Monday to
-              Saturday, 8am to 4pm GMT Please do count on us for your beautiful,
-              greate and yet simple graphics from our team 24/7 from Monday to
-              Saturday, 8am to 4pm GMT
+              Saturday, 8am to 4pm GMT Please do count ..
             </p>
             <a href="#">Read More..</a>
           </div>
         </div>
-        <div class="box">
-          <div id="wrapper">
+
+        <div id="wrapper">
+          <div class="box">
             <h2>04</h2>
             <h3>UI/UX Design</h3>
             <p>
               We offer you greate and amazing design that creates a lasting
               memory forever. Please do count on us for your beautiful, greate
               and yet simple graphics from our team 24/7 from Monday to
-              Saturday, 8am to 4pm GMT Please do count on us for your beautiful,
-              greate and yet simple graphics from our team 24/7 from Monday to
-              Saturday, 8am to 4pm GMT
+              Saturday, 8am to 4pm GMT Please do ..
             </p>
             <a href="#">Read More..</a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ------------------Feature Section--------------------- -->
+    <section class="features">
+      <div class="feature">
+        <div id="content-box3">
+          <div class="container">
+            <h2>Our features includes</h2>
+            <ul>
+              <li>
+                We offer you greate and amazing design that creates a lasting
+                memory forever
+              </li>
+              <li>
+                We offer you greate and amazing design that creates a lasting
+                memory forever
+              </li>
+              <li>
+                We offer you greate and amazing design that creates a lasting
+                memory forever
+              </li>
+              <li>
+                We offer you greate and amazing design that creates a lasting
+                memory forever
+              </li>
+              <li>
+                We offer you greate and amazing design that creates a lasting
+                memory forever
+              </li>
+              <li>
+                We offer you greate and amazing design that creates a lasting
+                memory forever
+              </li>
+            </ul>
+          </div>
+          <div class="img-trangle">
+            <div class="feat-img">
+              <img src="image/boy.jpg" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------Get In Touch------------->
+    <div class="main">
+    <section id="get-intouch">
+      <div class="content-box4">
+        <div class="container">
+          <h1>Get In Touch</h1>
+          <div class="contact-form">
+            <form action="#" id="form1">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  name="tel"
+                  class="form-control"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email ID"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="text"
+                  id="form-control"
+                  cols="45"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                <a href="#"> Send Message</a>
+              </button>
+            </form>
+          </div>
+          <div class="contact-img">
+            <img src="image/contact.jpg" alt="#" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+    <!-- -------Footer---------------------- -->
+    <section class="footer">
+      <div id="sub">
+        <div id="content-box5">
+          <div class="container2">
+            <h4>Subscribe To Our News Letter</h4>
+            <div class="input">
+              <input
+                type="email"
+                name="email"
+                id="input"
+                placeholder="example@gmail.com"
+              />
+              <button type="submit"><a href="#"> Send</a></button>
+            </div>
+          </div>
+          <!-- -----------Media Section-------------------- -->
+          <!-- <div class="follow-us"> -->
+          <div class="container2">
+            <h4>Social Media</h4>
+            <div class="wrapper">
+            <div class="media-icon">
+              <img src="image/dribble.png" alt="" /><a href="#"
+                >3D@dribble.com</a
+              >
+            </div>
+            <div class="media-icon">
+              <img src="image/linkedin logo.png" alt="" />
+              <a href="#">3D@linkedin.com</a>
+            </div>
+            <div class="media-icon">
+              <img src="image/facebook logo.png" alt="" />
+              <a href="#">3D updates</a>
+            </div>
+            <div class="media-icon">
+              <img src="image/instagram log.png" alt="" /><a href="#">3DUPDATES</a
+              </a>
+            </div>
+            <div class="media-icon">
+              <img src="image/watsapp.png" alt="" /><a href="#">3D Services</a>
+            </div>
+          </div>
+          </div>
+          <!-- </div> -->
+
+          <!-- ---------Location-------------------- -->
+          <div class="container2">
+            <h4>Locate Us</h4>
+            <div id="locate-us">
+              <div class="find-us">
+              <i class="fa fa-map-marker"></i
+              ><span>East Legon Road, Okponglo, Accra</span>
+            </div>
+            <div class="find-us">
+              <i class="fa fa-phone"></i><span>(+233) 267 899 757</span>
+            </div>
+            <div class="find-us">
+              <i class="fa fa-envelope-o"></i><span><a href="#">support@gmail.com</a></span>
+            </div>
+          </div>
+          </div>
+        </div>
+        <hr>
+       <p> Website Crafted By Whizzy_Ellah<br> copy right&copy; 2020</p>
+      </div>
+    </section>
+  
+  <script>
+    $(".main").tiltedpage_scroll({
+    sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+    angle: 20,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+    opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+    scale: false,                       // You can toggle the scaling effect here as well. The default value is true.
+    outAnimation: true               // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+  });
+  </script>
   </body>
 </html>
-
-<!-- 
-<h2>02</h2>
-          <h3>UI/UX Design</h3>
-          <p>
-            We offer you greate and amazing design that creates a lasting memory
-            forever. Please do count on us for your beautiful, greate and yet
-            simple graphics from our team 24/7 from Monday to Saturday, 8am to
-            4pm GMT Please do count on us for your beautiful, greate and yet
-            simple graphics from our team 24/7 from Monday to Saturday, 8am to
-            4pm GMT
-          </p> -->

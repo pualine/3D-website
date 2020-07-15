@@ -3,6 +3,9 @@ body {
   margin: 0;
   /* background-color: blue; */
 }
+body {
+  overflow-x: hidden;
+}
 
 .content-box {
   background-image: linear-gradient(
@@ -17,13 +20,43 @@ body {
   width: 100%;
   height: 100vh;
 }
-/* ------Login and Sign Up Session------------ */
+/* ------Login and Sign Up Session------------- */
 .menu {
   display: inline-flex;
 }
 .menu {
   margin: 5px 0 0 110px;
   cursor: pointer;
+}
+
+/*------------------------Menu Nav section Responsiveness---------------------- */
+@media screen and (max-width: 768px) {
+  /* ----logo section ------ */
+  .menu img {
+    width: 15vh;
+    height: 15vh;
+    margin-left: -80px;
+    margin-top: 5px;
+  }
+  .nav {
+    /* position: fixed; */
+    display: inline-flex;
+  }
+  .nav .nav-but1 {
+    margin-top: 5px;
+  }
+  .nav .nav-but1 a {
+    font-size: 13px;
+  }
+  /* -----Button 2 ------ */
+  .nav .nav-but2 {
+    margin-top: 5px;
+    width: 88.9px;
+    margin-right: 50px;
+  }
+  .nav .nav-but2 a {
+    font-size: 13px;
+  }
 }
 
 .menu #button1 {
@@ -55,7 +88,7 @@ body {
   background-color: #ff4d73;
 }
 
-.menu a {
+.menu button a {
   text-decoration: none;
   color: #ffffff;
   font-size: 17px;
@@ -75,12 +108,12 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   line-height: 25px;
-  margin: -50px 0 50px;
+  margin: 20px 0 50px;
 }
 
 .banner-text h2 {
   font-size: 65px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-family: "Courier New", Courier, monospace;
 }
 #button3 {
@@ -92,7 +125,7 @@ body {
   width: 130px;
   transition: 0.5s;
 }
-.banner-text a {
+.banner-text button a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -101,6 +134,10 @@ body {
 }
 
 /* -------Services---------------- */
+.box {
+  position: relative;
+  padding: 20px;
+}
 h1 {
   text-align: center;
   padding-top: 50px;
@@ -119,9 +156,9 @@ h1::after {
   justify-content: center;
   background-color: #060c21;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
-.content-box2 .box {
+#wrapper .box {
   position: relative;
   height: 350px;
   flex: 4;
@@ -130,22 +167,20 @@ h1::after {
   background: #060c21;
   border: 1px solid #000;
   color: #ffffff;
+  /* z-index: 1; */
 }
-.content-box2 .box::before {
+#wrapper .box::before {
   content: "";
   position: absolute;
   top: -2px;
-  right: -2px;
   left: -2px;
+  right: -2px;
   bottom: -2px;
-  background: #fff;
-  transform: skew(2deg, 2deg);
-  z-index: -1;
+  /* background: #fff; */
+  /* transform: skew(2deg, 2deg); */
+  /* z-index: -1; */
+  /* I will come back to this.--------------------------- */
 }
-/* .content-box2 .box::before {
-  transform: skew(2deg, 2deg);
-  z-index: -1;
-} */
 
 .box h2 {
   position: absolute;
@@ -158,7 +193,7 @@ h1::after {
   transition: 0.5s;
 }
 
-.box:hover #wrapper h2 {
+#wrapper:hover .box h2 {
   top: -140px;
 }
 
@@ -173,7 +208,7 @@ h1::after {
   padding: 5px;
   margin: 0;
 }
-#wrapper a {
+#wrapper .box a {
   position: relative;
   text-decoration: none;
   margin: 20px 0 0;
@@ -186,7 +221,7 @@ h1::after {
   opacity: 0;
   visibility: hidden;
 }
-.box:hover #wrapper a {
+#wrapper:hover .box a {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
@@ -194,3 +229,265 @@ h1::after {
 }
 
 /* Will come back and fix this. #060c21b4   #0d1840*/
+
+/*--------------------------- Feature Section --------------------- */
+.feature {
+  height: 100vh;
+  /* background: #ff4d73; */
+}
+.feature h2 {
+  margin-top: 180px;
+  margin-left: 50px;
+  /* background: #ff4d73; */
+}
+
+.feature h2::after {
+  content: "";
+  background-color: #ff4d73;
+  display: block;
+  height: 3px;
+  width: 120px;
+  margin: 20px auto 50px;
+  position: absolute;
+  left: 55px;
+}
+
+.feature ul {
+  margin-top: 50px;
+  margin-left: 50px;
+  list-style: none;
+}
+.feature ul li {
+  line-height: 30px;
+  font-size: 14px;
+  position: relative;
+}
+
+.feature ul li::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #ff4d73;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 17px;
+  left: -25px;
+}
+
+.feat-img img {
+  width: 280px;
+  height: 280px;
+  margin-left: 190px;
+  margin-top: 150px;
+}
+.feat-img img {
+  content: "";
+  width: 280px;
+  height: 280px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1220px;
+}
+.img-trangle::after {
+  content: "";
+  width: 295px;
+  height: 295px;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 788px;
+  top: 1380px;
+  border: 1px #4d82ff solid;
+}
+
+.feature #content-box3 {
+  display: inline-flex;
+  flex: 2;
+}
+
+/* ------------------Get In Touch-------- */
+#get-intouch h1 {
+  padding-top: 50px;
+}
+/* .content-box4 {
+  background-color: #03102f72;
+} */
+.contact-form {
+  padding: 15px;
+  width: 55%;
+  height: 90vh;
+  margin-left: -80px !important;
+  background-color: #03102f72;
+}
+#get-intouch form {
+  margin-top: 60px;
+}
+.form-group input {
+  padding: 15px;
+  margin: 10px;
+  margin-left: 100px;
+  width: 310px;
+  /* height: 40px; */
+}
+
+.form-group input {
+  border: 1px #fff solid !important;
+  border-radius: 23px !important;
+  /* border-style: none; */
+  background-color: transparent !important;
+}
+.form-group input::placeholder {
+  font-size: 17px;
+  color: #fff;
+  padding-left: 20px;
+}
+/* -----Textarea------------------ */
+.form-group textarea {
+  padding: 15px !important;
+  margin: 10px !important;
+  margin-left: 95px !important;
+}
+
+.form-group textarea {
+  border: 1px #fff solid !important;
+  border-radius: 23px !important;
+  background-color: transparent !important;
+}
+
+#form1 button {
+  padding: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  border-style: none;
+  border: 1px #03102f72;
+  margin-left: 150px;
+  background-color: #2664f5;
+  color: #fff;
+}
+form button a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+#form1 button:hover {
+  background-color: #ff4d73;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+}
+form button {
+  cursor: pointer;
+}
+
+.contact-img img {
+  display: inline-flex;
+  float: right;
+  margin-top: -300px;
+  width: 400px;
+  height: 300px;
+}
+.contact-img img {
+  margin-right: 90px;
+}
+
+/* ------------Footer-------------- */
+#sub {
+  background-color: #03102f1c;
+  margin-top: 100px;
+  height: 90vh;
+}
+hr {
+  background-color: darkblue;
+}
+#sub p {
+  text-align: center;
+}
+
+.input input {
+  margin-top: 40px;
+  margin-left: 30px;
+  padding: 10px;
+  width: 250px;
+}
+
+.input input::placeholder {
+  color: gray;
+}
+.input button {
+  padding: 12px;
+  border-style: none;
+  border: 1px;
+  width: 18%;
+  background-color: #2664f5;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600px;
+}
+.input button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.input button:hover {
+  background-color: #ff4d73;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+}
+
+/*-------Media section--------------- */
+#content-box5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(4, 25, 132);
+}
+#content-box5 .container2 {
+  position: relative;
+  height: 350px;
+  flex: 3;
+  margin: 20px 20px 10px 20px;
+  /* border: 1px solid #000; */
+}
+#content-box5 h4 {
+  text-align: center;
+}
+
+.media-icon img {
+  width: 30px;
+  height: 30px;
+  margin-top: 2px;
+  margin-left: 110px;
+}
+.container2 .wrapper {
+  margin-top: 20px;
+}
+.media-icon a {
+  color: rgb(4, 25, 132);
+  font-size: 16px;
+  padding: 5px;
+}
+
+#locate-us .find-us {
+  margin-left: 60px;
+  padding: 5px;
+}
+
+#locate-us .fa {
+  margin: 10px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4b72;
+}
+#locate-us .find-us a {
+  color: rgb(4, 25, 132);
+}
+.big-wrapper,
+.features,
+.footer {
+  margin-top: 10px;
+}
+/* #get-intouch {
+  margin-top: 10px;
+} */
